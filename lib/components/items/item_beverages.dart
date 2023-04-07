@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/model/cart_model.dart';
-
 import '../item_card.dart';
 
 class ItemBeverages extends StatelessWidget {

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../pages/cart_page.dart';
-import '../pages/hame_page.dart';
+import '../pages/home_page.dart';
 import '../pages/profile_page.dart';
 
 class NavBar extends StatefulWidget {
-  NavBar({super.key});
+  const NavBar({super.key});
 
   @override
   State<NavBar> createState() => _NavBarState();
