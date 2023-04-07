@@ -4,7 +4,7 @@ import '../../components/items/item_beverages.dart';
 import '../../components/items/item_food.dart';
 import '../../components/items/item_fruit.dart';
 import '../../components/items/item_snacks.dart';
-import '../../components/title_more.dart';
+import 'title_more.dart';
 
 class HomeePage extends StatelessWidget {
   const HomeePage({super.key});
@@ -16,7 +16,6 @@ class HomeePage extends StatelessWidget {
         child: Column(
           children: const [
             Header(),
-            // Body
             TitleMore(title: "Snacks"),
             ItemSnacks(),
             TitleMore(title: "Fruits & Vegetables"),

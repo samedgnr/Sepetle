@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop_app/pages/main_page.dart';
+import 'package:shop_app/pages/start_page/main_page.dart';
 import 'model/cart_model.dart';
 
 void main() async {

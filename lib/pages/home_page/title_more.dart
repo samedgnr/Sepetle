@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../pages/more_page.dart';
+import '../more_page.dart';
 
 class TitleMore extends StatelessWidget {
   const TitleMore({super.key, required this.title});
