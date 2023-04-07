@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../components/header.dart';
-import '../components/items/item_beverages.dart';
-import '../components/items/item_food.dart';
-import '../components/items/item_fruit.dart';
-import '../components/items/item_snacks.dart';
-import '../components/title_more.dart';
+import 'header.dart';
+import '../../components/items/item_beverages.dart';
+import '../../components/items/item_food.dart';
+import '../../components/items/item_fruit.dart';
+import '../../components/items/item_snacks.dart';
+import '../../components/title_more.dart';
 
 class HomeePage extends StatelessWidget {
   const HomeePage({super.key});

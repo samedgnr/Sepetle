@@ -27,10 +27,12 @@ class Header extends StatelessWidget {
                 const SizedBox(
                   width: 8,
                 ),
-                Text(
-                  "Welcome ",
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                const Text(
+                  "Welcome",
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
                 ),
                 const Spacer(),
                 Image.asset(
