@@ -4,17 +4,23 @@ import 'package:provider/provider.dart';
 import 'package:shop_app/firebase_configurations.dart';
 import 'package:shop_app/pages/start_page/main_page.dart';
 import 'model/cart_model.dart';
+import 'package:flutter/foundation.dart';
 
 final FirebaseConfiguratinons _configuratinons = FirebaseConfiguratinons();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-      options: FirebaseOptions(
-    apiKey: _configuratinons.apiKey,
-    appId: _configuratinons.appId,
-    messagingSenderId: _configuratinons.messagingSenderId,
-    projectId: _configuratinons.projectId,
-  ));
+
+  if (kIsWeb) {
+    await Firebase.initializeApp(
+        options: FirebaseOptions(
+      apiKey: _configuratinons.apiKey,
+      appId: _configuratinons.appId,
+      messagingSenderId: _configuratinons.messagingSenderId,
+      projectId: _configuratinons.projectId,
+    ));
+  } else {
+    await Firebase.initializeApp();
+  }
 
   runApp(const MyApp());
 }
@@ -22,7 +28,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
