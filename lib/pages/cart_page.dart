@@ -65,8 +65,6 @@ class CartPage extends StatelessWidget {
                   ),
                 ),
               ),
-
-              // total + pay now
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Container(
@@ -78,7 +76,6 @@ class CartPage extends StatelessWidget {
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        //price
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -99,7 +96,6 @@ class CartPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        //pay now button
                         Container(
                           decoration: BoxDecoration(
                               border: Border.all(color: Colors.green.shade100),
